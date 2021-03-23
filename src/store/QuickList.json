@@ -1,0 +1,125 @@
+[
+  {
+    "qid": 1,
+    "icon": "./src/static/QuickIcon/github.svg",
+    "description": "Github",
+    "origin": "https://github.com",
+    "sub": null,
+    "quick": null
+  },
+  {
+    "qid": 2,
+    "icon": "./src/static/QuickIcon/cflare.svg",
+    "description": "Cloudflare Dashboard",
+    "origin": "https://dash.cloudflare.com/",
+    "sub": "dash",
+    "quick": "dash.moz.one"
+  },
+  {
+    "qid": 1,
+    "icon": "./src/static/QuickIcon/github.svg",
+    "description": "Github",
+    "origin": "https://github.com",
+    "sub": null,
+    "quick": null
+  },
+  {
+    "qid": 1,
+    "icon": "./src/static/QuickIcon/github.svg",
+    "description": "Github",
+    "origin": "https://github.com",
+    "sub": null,
+    "quick": null
+  },
+  {
+    "qid": 1,
+    "icon": "./src/static/QuickIcon/github.svg",
+    "description": "Github",
+    "origin": "https://github.com",
+    "sub": null,
+    "quick": null
+  },
+  {
+    "qid": 1,
+    "icon": "./src/static/QuickIcon/github.svg",
+    "description": "Github",
+    "origin": "https://github.com",
+    "sub": null,
+    "quick": null
+  },
+  {
+    "qid": 1,
+    "icon": "./src/static/QuickIcon/github.svg",
+    "description": "Github",
+    "origin": "https://github.com",
+    "sub": null,
+    "quick": null
+  },
+  {
+    "qid": 1,
+    "icon": "./src/static/QuickIcon/github.svg",
+    "description": "Github",
+    "origin": "https://github.com",
+    "sub": null,
+    "quick": null
+  },
+  {
+    "qid": 1,
+    "icon": "./src/static/QuickIcon/github.svg",
+    "description": "Github",
+    "origin": "https://github.com",
+    "sub": null,
+    "quick": null
+  }
+,
+  {
+    "qid": 1,
+    "icon": "./src/static/QuickIcon/github.svg",
+    "description": "Github",
+    "origin": "https://github.com",
+    "sub": null,
+    "quick": null
+  },
+  {
+    "qid": 1,
+    "icon": "./src/static/QuickIcon/github.svg",
+    "description": "Github",
+    "origin": "https://github.com",
+    "sub": null,
+    "quick": null
+  }
+,
+  {
+    "qid": 1,
+    "icon": "./src/static/QuickIcon/github.svg",
+    "description": "Github",
+    "origin": "https://github.com",
+    "sub": null,
+    "quick": null
+  },
+  {
+    "qid": 1,
+    "icon": "./src/static/QuickIcon/github.svg",
+    "description": "Github",
+    "origin": "https://github.com",
+    "sub": null,
+    "quick": null
+  }
+,
+  {
+    "qid": 1,
+    "icon": "./src/static/QuickIcon/github.svg",
+    "description": "Github",
+    "origin": "https://github.com",
+    "sub": null,
+    "quick": null
+  },
+  {
+    "qid": 1,
+    "icon": "./src/static/QuickIcon/github.svg",
+    "description": "Github",
+    "origin": "https://github.com",
+    "sub": null,
+    "quick": null
+  }
+]

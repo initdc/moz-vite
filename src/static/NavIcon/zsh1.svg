@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="410" height="392.88" viewBox="0 0 410 392.88">
+  <defs>
+    <style>
+      .a {
+        font-size: 205px;
+        font-family: UbuntuMono-Bold, Ubuntu Mono;
+        font-weight: 700;
+      }
+
+      .b {
+        fill: red;
+      }
+    </style>
+  </defs>
+  <g>
+    <text class="a" transform="translate(0 173.53)">Zsh<tspan x="0" y="184.5" xml:space="preserve"> One</tspan></text>
+    <path class="b" d="M398.15,150.89a32.11,32.11,0,0,1-8.2,21.73q-8.2,9.44-21.73,9.43-13.94,0-22.14-9.43a32.11,32.11,0,0,1-8.2-21.73,32.7,32.7,0,0,1,8.2-22.14q8.21-9.42,22.14-9.43,13.53,0,21.73,9.43A32.7,32.7,0,0,1,398.15,150.89Z" transform="translate(6 -3.56)"/>
+  </g>
+</svg>

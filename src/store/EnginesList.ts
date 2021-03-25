@@ -30,6 +30,7 @@ function getEngine(EngineID: number) {
     let eng: Engine[] = EnginesList.filter(e => e.eid === EngineID)
     if (eng.length < 1) {
         console.error('Not data found for querying "' + EngineID + '"')
+        return undefined
     }
     return eng[0]
 }
@@ -38,6 +39,7 @@ function getAllEngines() {
     let eng: Engine[] = EnginesList
     if (eng.length < 1) {
         console.error('Not data found for querying EnginesList')
+        return undefined
     }
     return eng
 }

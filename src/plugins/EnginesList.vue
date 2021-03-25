@@ -1,9 +1,9 @@
 <template>
   <div>
-     List
+    List
     <ul>
       <li v-for="v in object">
-        {{v}}
+        {{ v }}
       </li>
     </ul>
   </div>
@@ -11,7 +11,7 @@
 </template>
 
 <script>
- import { getEngine } from '../store/EnginesList.ts'
+import {getEngine} from '../store/EnginesList.ts'
 
 export default {
   name: 'EnginesList',
@@ -21,7 +21,7 @@ export default {
   setup() {
     let e = getEngine(1)
     let object = e
-    return { object }
+    return {object}
   }
 }
 </script>

@@ -28,111 +28,12 @@ const QuickList: Quick[] = [
         "quick": "dash.moz.one"
     },
     {
-        "qid": 1,
-        "icon": "./src/static/QuickIcon/github.svg",
-        "description": "Github",
-        "origin": "https://github.com",
-        "sub": null,
-        "quick": null
-    },
-    {
-        "qid": 1,
-        "icon": "./src/static/QuickIcon/github.svg",
-        "description": "Github",
-        "origin": "https://github.com",
-        "sub": null,
-        "quick": null
-    },
-    {
-        "qid": 1,
-        "icon": "./src/static/QuickIcon/github.svg",
-        "description": "Github",
-        "origin": "https://github.com",
-        "sub": null,
-        "quick": null
-    },
-    {
-        "qid": 1,
-        "icon": "./src/static/QuickIcon/github.svg",
-        "description": "Github",
-        "origin": "https://github.com",
-        "sub": null,
-        "quick": null
-    },
-    {
-        "qid": 1,
-        "icon": "./src/static/QuickIcon/github.svg",
-        "description": "Github",
-        "origin": "https://github.com",
-        "sub": null,
-        "quick": null
-    },
-    {
-        "qid": 1,
-        "icon": "./src/static/QuickIcon/github.svg",
-        "description": "Github",
-        "origin": "https://github.com",
-        "sub": null,
-        "quick": null
-    },
-    {
-        "qid": 1,
-        "icon": "./src/static/QuickIcon/github.svg",
-        "description": "Github",
-        "origin": "https://github.com",
-        "sub": null,
-        "quick": null
-    }
-    ,
-    {
-        "qid": 1,
-        "icon": "./src/static/QuickIcon/github.svg",
-        "description": "Github",
-        "origin": "https://github.com",
-        "sub": null,
-        "quick": null
-    },
-    {
-        "qid": 1,
-        "icon": "./src/static/QuickIcon/github.svg",
-        "description": "Github",
-        "origin": "https://github.com",
-        "sub": null,
-        "quick": null
-    }
-    ,
-    {
-        "qid": 1,
-        "icon": "./src/static/QuickIcon/github.svg",
-        "description": "Github",
-        "origin": "https://github.com",
-        "sub": null,
-        "quick": null
-    },
-    {
-        "qid": 1,
-        "icon": "./src/static/QuickIcon/github.svg",
-        "description": "Github",
-        "origin": "https://github.com",
-        "sub": null,
-        "quick": null
-    }
-    ,
-    {
-        "qid": 1,
-        "icon": "./src/static/QuickIcon/github.svg",
-        "description": "Github",
-        "origin": "https://github.com",
-        "sub": null,
-        "quick": null
-    },
-    {
-        "qid": 1,
-        "icon": "./src/static/QuickIcon/github.svg",
-        "description": "Github",
-        "origin": "https://github.com",
-        "sub": null,
-        "quick": null
+        "qid": 3,
+        "icon": "./src/static/vue3.png",
+        "description": "Vue3 CN",
+        "origin": "https://v3.cn.vuejs.org",
+        "sub": "v3c",
+        "quick": "v3c.moz.one"
     }
 ]
 
@@ -141,6 +42,7 @@ function getQuick(QuickID: number) {
     let ql: Quick[] = QuickList.filter(q => q.qid === QuickID)
     if (ql.length < 1) {
         console.error('Not data found for querying "' + QuickID + '"')
+        return undefined
     }
     return ql[0]
 }
@@ -149,6 +51,7 @@ function getAllQuick() {
     let ql: Quick[] = QuickList
     if (ql.length < 1) {
         console.error('Not data found for querying QuickList')
+        return undefined
     }
     return ql
 }

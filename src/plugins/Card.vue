@@ -22,6 +22,7 @@ import {ref} from 'vue'
 
 export default {
   name: 'Card',
+  emits: ['update'],
   props: {
     qid: Number,
     icon: String,
@@ -30,10 +31,10 @@ export default {
     quick: String,
   },
   setup(qid) {
-    // console.error(qid)
+    // console.log(qid)
     for (const [key, value] of Object.entries(qid)) {
       var qidVal = Number(value)
-      console.error(typeof key)
+      // console.log(value)
     }
 
     if (!qidVal) {
@@ -42,6 +43,12 @@ export default {
     }
 
     let ql = getQuick(qidVal)
+
+    if (ql === undefined) {
+      let icon, description, origin, quick = ref('undefined')
+      return {icon, description, origin, quick}
+    }
+
     let icon = ql.icon
     let description = ql.description
     let origin = ql.origin
@@ -50,7 +57,10 @@ export default {
       quick = 'null'
     }
 
-    return {icon, description, origin, quick}
+    return { icon, description, origin, quick }
+  },
+  beforeCreate() {
+    this.$emit('update')
   },
 }
 </script>
@@ -67,11 +77,11 @@ export default {
 }
 
 .iconArea {
-  @apply w-full h-20 flex
+  @apply w-3/4 h-20 flex mx-auto
 }
 
 .icon {
-  @apply px-8 flex-none m-auto
+  @apply h-3/4 flex m-auto
 }
 
 .description {

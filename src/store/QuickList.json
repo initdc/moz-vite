@@ -16,20 +16,20 @@
     "quick": "dash.moz.one"
   },
   {
-    "qid": 1,
-    "icon": "./src/static/QuickIcon/github.svg",
-    "description": "Github",
-    "origin": "https://github.com",
-    "sub": null,
-    "quick": null
+    "qid": 3,
+    "icon": "./src/static/QuickIcon/vue3.png",
+    "description": "Vue3 CN",
+    "origin": "https://v3.cn.vuejs.org",
+    "sub": "v3c",
+    "quick": "v3c.moz.one"
   },
   {
-    "qid": 1,
-    "icon": "./src/static/QuickIcon/github.svg",
-    "description": "Github",
-    "origin": "https://github.com",
-    "sub": null,
-    "quick": null
+    "qid": 4,
+    "icon": "./src/static/QuickIcon/ns1.svg",
+    "description": "NS1 dashboard",
+    "origin": "https://my.nsone.net/",
+    "sub": "my",
+    "quick": "my.moz.one"
   },
   {
     "qid": 1,

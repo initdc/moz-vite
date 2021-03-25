@@ -33,6 +33,14 @@ module.exports = {
                 pink: colors.pink,
                 rose: colors.rose,
             },
+            spacing: {
+                '13': '3.25rem',
+                '15': '3.75rem',
+                '17': '4.25rem',
+                '18': '4.5rem',
+                '19': '4.75rem',
+                '19.5': '4.875rem',
+            },
             boxShadow: {
                 'inner-sm': 'inset 0 1px 2px 0 rgba(0, 0, 0, 0.05)',
                 'inner-md': 'inset 0 4px 6px -1px rgba(0, 0, 0, 0.1), inset 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
@@ -45,11 +53,11 @@ module.exports = {
     },
     variants: {
         extend: {
-            backgroundColor: ['odd', 'even', 'active'],
+            backgroundColor: ['odd', 'even', 'active','group-focus','group-hover'],
             borderWidth: ['first', 'last', 'hover', 'focus'],
             cursor: ['active'],
             opacity: ['disabled'],
-            textColor: ['group-focus'],
+            textColor: ['group-focus', 'active','group-hover'],
             ringWidth: ['focus-visible'],
             ringOffsetWidth: ['focus-visible'],
             ringOffsetColor: ['focus-visible'],

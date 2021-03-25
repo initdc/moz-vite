@@ -17,12 +17,12 @@
 </template>
 
 <script>
-import {getQuick} from '../store/QuickList.ts'
-import {ref} from 'vue'
+import { getQuick } from '../store/QuickList.ts'
+import { ref } from 'vue'
 
 export default {
   name: 'Card',
-  emits: ['update'],
+  // emits: ['update'],
   props: {
     qid: Number,
     icon: String,
@@ -57,11 +57,11 @@ export default {
       quick = 'null'
     }
 
-    return { icon, description, origin, quick }
+    return {icon, description, origin, quick}
   },
-  beforeCreate() {
-    this.$emit('update')
-  },
+  // beforeCreate() {
+  //   this.$emit('update')
+  // },
 }
 </script>
 
@@ -73,15 +73,15 @@ export default {
 .innerCard {
   @apply w-auto h-auto flex-col m-1 rounded
   bg-gradient-to-bl from-gray-300 to-gray-50
-  hover:shadow-inner
+  hover:shadow-inner-lg
 }
 
 .iconArea {
-  @apply w-3/4 h-20 flex mx-auto
+  @apply w-5/6 h-20 flex mx-auto
 }
 
 .icon {
-  @apply h-3/4 flex m-auto
+  @apply flex-none mx-auto py-4
 }
 
 .description {

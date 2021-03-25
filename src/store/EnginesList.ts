@@ -2,6 +2,7 @@ export interface Engine {
     "eid": number
     'name': string
     'icon': string
+    'index': string
     'query': string
 }
 export { getEngine, getAllEngines }
@@ -9,22 +10,47 @@ const EnginesList: Engine[] = [
     {
         "eid": 1,
         "name": "Google",
-        "icon": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+        "icon": "./src/static/EngineIcon/google.svg",
+        "index": "https://www.google.com",
         "query": "https://www.google.com/search?q="
     },
     {
         "eid": 2,
         "name": "Bing",
-        "icon": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Bing_logo_%282016%29.svg",
+        "icon": "./src/static/EngineIcon/bing.svg",
+        "index": "https://www.bing.com",
         "query": "https://www.bing.com/search?q="
     },
     {
         "eid": 3,
         "name": "Yandex",
-        "icon": "https://yastatic.net/s3/home-static/_/Q/r/sx-Y7-1azG3UMxG55avAdgwbM.svg",
+        "icon": "./src/static/EngineIcon/yandex.svg",
+        "index": "https://yandex.com",
         "query": "https://yandex.com/search/?text="
+    },
+    {
+        "eid": 4,
+        "name": "DuckDuckGo",
+        "icon": "./src/static/EngineIcon/duckgo.svg",
+        "index": "https://duckduckgo.com",
+        "query": "https://duckduckgo.com/?q="
+    },
+    {
+        "eid": 5,
+        "name": "Aol.",
+        "icon": "./src/static/EngineIcon/aol.svg",
+        "index": "https://search.aol.com",
+        "query": "https://search.aol.com/aol/search?q="
+    },
+    {
+        "eid": 6,
+        "name": "Qwant",
+        "icon": "./src/static/EngineIcon/qwant.svg",
+        "index": "https://www.qwant.com",
+        "query": "https://www.qwant.com/?q="
     }
 ]
+
 
 function getEngine(EngineID: number) {
     let eng: Engine[] = EnginesList.filter(e => e.eid === EngineID)

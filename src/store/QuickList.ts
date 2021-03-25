@@ -10,7 +10,7 @@ export interface Quick {
 
 export {getQuick, getAllQuick}
 
-const Domain = 'moz.one'
+// const Domain = 'moz.one'
 const QuickList: Quick[] = [
     {
         "qid": 1,

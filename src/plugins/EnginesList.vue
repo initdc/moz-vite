@@ -2,7 +2,7 @@
   <div class="EnginesList">
     <ul>
       <li v-for=" eIcon of eIcons">
-        <button class="eBtn" :id="eid++">
+        <button class="eBtn" @click="$emit('updatee')" :id="eid++">
           <img :src="eIcon">
         </button>
       </li>
@@ -17,15 +17,18 @@ import {getAllEngines} from '../store/EnginesList'
 
 export default {
   name: 'EnginesList',
-  // emits: ['updatee'],
+  emits: ['updatee'],
   props: {
     eid: Number,
     icon: String,
   },
   setup() {
 
-    let eid = 1
+    let eid :number = 1
     let allE = getAllEngines()
+    if (allE === undefined) {
+      return undefined
+    }
     let eLength: number = allE.length
     let eIcons = []
     for (let x = 0; x < eLength; x++) {
@@ -41,12 +44,12 @@ export default {
 
 <style scoped>
 .EnginesList {
-  @apply w-19.5 h-24 ml-1 -mt-1 flex shadow-lg
+  @apply w-19.5 h-24 ml-1 -mt-1 flex shadow-lg border
   overscroll-auto overflow-auto
 }
 
 ul {
-  @apply flex-col border
+  @apply flex-col
 }
 
 li {

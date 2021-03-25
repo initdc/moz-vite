@@ -5,13 +5,13 @@
         <a id="engines" :href="index" target="_blank">
           <img id="icon" :src="icon">
         </a>
-        <button id="select" @click="eshow = !eshow">▼</button>
+        <button id="select" @click="eShow = !eShow">▼</button>
         <input id="input" @keyup.enter="search(input,query)" v-model="input" placeholder="Search something">
         <button id="search" @click="search(input,query)">search</button>
       </div>
     </div>
-    <EnginesList v-show="eshow"></EnginesList>
-    {{ eshow }}
+    <EnginesList v-if="eShow"></EnginesList>
+<!--    {{ eShow }}-->
   </div>
 </template>
 
@@ -23,7 +23,7 @@ import {getEngine} from "../store/EnginesList";
 export default {
   components: {EnginesList},
   props: {
-    eshow: Boolean,
+    eShow: Boolean,
     eid: Number,
     icon: String,
     index: String,
@@ -42,7 +42,7 @@ export default {
     //
     let input: string = ''
     let eid = 1
-    let eshow = ref(false)
+    let eShow = ref(false)
 
     let el = getEngine(eid)
     if (el === undefined) {
@@ -54,13 +54,17 @@ export default {
     let index = el.index
     let query = el.query
 
-    return {input, eshow, icon, index, query}
+    return {input, eShow, icon, index, query}
   },
   methods: {
     search(input: string, query: string) {
       if (input !== '') {
         window.location.href = query + input
       }
+    },
+    updatee(){
+      // let eeid = this.$refs.icon.id
+      console.log('eeid')
     }
   }
 

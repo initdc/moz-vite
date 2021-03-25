@@ -1,5 +1,5 @@
 <template>
-  <button @click="show"> btn </button>
+<!--  <button @click="show(qid)"> btn</button>-->
   <div class="Grid">
     <div v-for="x in cdCol" class="GridCol">
       <div class="Cards">
@@ -24,21 +24,26 @@ export default {
   },
   setup() {
     let ql = getAllQuick()
+    if (ql === undefined) {
+      return undefined
+    }
     let sum = ql.length
+
+    let cdCol: number
 
     let modNum = sum % 5
     if (modNum !== 0) {
-      var cdCol = parseInt(sum / 5) + 1
+      cdCol = Number(sum / 5) + 1
     } else {
-      var cdCol = sum / 5
+      cdCol = sum / 5
     }
     // console.error(cdCol+` / `+sum)
-    let qid: Number = 1
+    let qid: number = 1
     return {cdCol, qid}
   },
-  methods:{
-    show(){
-      console.log(this.qid)
+  methods: {
+    show(obj: any) {
+      console.log(obj)
     }
   }
   // created() {
@@ -54,7 +59,7 @@ export default {
 }
 
 .GridCol {
-  @apply w-full flex-col mt-16 mx-auto
+  @apply w-full flex-col mb-16 mx-auto
 }
 
 .Cards {

@@ -23,8 +23,8 @@ export default {
 </script>
 
 <style scoped>
-#ending {
-  @apply h-32
-}
+/*#ending {*/
+/*  @apply h-32*/
+/*}*/
 </style>
 

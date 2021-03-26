@@ -7,7 +7,7 @@
         <li>Build in 2021®</li>
       </ul>
       <ul>
-        <li>Issue on <a href="https://github.com/initdc/" target="_blank">Github</a></li>
+        <li>Issue on <a href="https://github.com/initdc/moz-json" target="_blank">Github</a></li>
         <li><a href="https://www.patreon.com/1drv" target="_blank">Donation</a></li>
       </ul>
     </div>

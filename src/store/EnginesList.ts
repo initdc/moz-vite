@@ -10,42 +10,42 @@ const EnginesList: Engine[] = [
     {
         "eid": 1,
         "name": "Google",
-        "icon": "./src/static/EngineIcon/google.svg",
+        "icon": "src/static/EngineIcon/google.svg",
         "index": "https://www.google.com",
         "query": "https://www.google.com/search?q="
     },
     {
         "eid": 2,
         "name": "Bing",
-        "icon": "./src/static/EngineIcon/bing.svg",
+        "icon": "src/static/EngineIcon/bing.svg",
         "index": "https://www.bing.com",
         "query": "https://www.bing.com/search?q="
     },
     {
         "eid": 3,
         "name": "Yandex",
-        "icon": "./src/static/EngineIcon/yandex.svg",
+        "icon": "src/static/EngineIcon/yandex.svg",
         "index": "https://yandex.com",
         "query": "https://yandex.com/search/?text="
     },
     {
         "eid": 4,
         "name": "DuckDuckGo",
-        "icon": "./src/static/EngineIcon/duckgo.svg",
+        "icon": "src/static/EngineIcon/duckgo.svg",
         "index": "https://duckduckgo.com",
         "query": "https://duckduckgo.com/?q="
     },
     {
         "eid": 5,
         "name": "Aol.",
-        "icon": "./src/static/EngineIcon/aol.svg",
+        "icon": "src/static/EngineIcon/aol.svg",
         "index": "https://search.aol.com",
         "query": "https://search.aol.com/aol/search?q="
     },
     {
         "eid": 6,
         "name": "Qwant",
-        "icon": "./src/static/EngineIcon/qwant.svg",
+        "icon": "src/static/EngineIcon/qwant.svg",
         "index": "https://www.qwant.com",
         "query": "https://www.qwant.com/?q="
     }

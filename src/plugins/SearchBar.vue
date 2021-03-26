@@ -106,7 +106,7 @@ export default {
 
 <style scoped>
 .Search {
-  @apply w-1/2 h-36 mx-auto flex-col mb-8
+  @apply w-1/2 h-36 mx-auto flex-col mb-8 z-10
 }
 
 .SearchBar {

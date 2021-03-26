@@ -1,5 +1,5 @@
 <template>
-  <div id="index" class="flex-row">
+  <div id="index" class="flex-grow">
     <Spacing></Spacing>
     <Logo class="flex m-auto"></Logo>
     <SearchBar></SearchBar>

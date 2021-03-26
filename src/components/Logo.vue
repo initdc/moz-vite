@@ -26,7 +26,7 @@ export default {
       clock.innerText = hour + " : " + min + " : " + sec; /* adding time to the div */
       let t = setTimeout(function () {
         currentTime()
-      }, 999); /* setting timer */
+      }, 1000); /* setting timer */
     }
 
     function updateTime(k: any) {
@@ -43,7 +43,7 @@ export default {
 </script>
 <style>
 .Logo {
-  @apply w-1/3 h-48 flex-col mb-8
+  @apply w-1/3 h-48 flex-col mb-8 z-0
 }
 .title {
   @apply flex-row pr-1

@@ -52,7 +52,7 @@ export default {
 
 <style scoped>
 .EnginesList {
-  @apply w-19.5 h-24 ml-1 -mt-1 flex shadow-lg border
+  @apply w-19.5 h-24 ml-1 -mt-1 flex shadow-lg border z-20
   overscroll-auto overflow-auto
 }
 

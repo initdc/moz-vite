@@ -1,17 +1,18 @@
 <template>
   <div class="Search">
+    <!--    <button @click="eshowoff" >{{ eShow }}</button>-->
     <div class="SearchBar">
-      <div id="innerSearch">
-        <a id="engines" :href="index" target="_blank">
-          <img id="icon" :src="icon">
+      <div class="innerSearch">
+        <a class="engines" :href="index" target="_blank">
+          <img class="icon" :src="icon">
         </a>
-        <button id="select" @click="eShow = !eShow">▼</button>
-        <input id="input" @keyup.enter="search(input,query)" v-model="input" placeholder="Search something">
-        <button id="search" @click="search(input,query)">search</button>
+        <button class="select" @click="eShow = !eShow">▼</button>
+        <input class="input" @focus="eshowoff" @keyup.enter="search(input,query)" v-model="input"
+               placeholder="Search something">
+        <button class="search" @click="search(input,query)">search</button>
       </div>
     </div>
     <EnginesList v-if="eShow"></EnginesList>
-<!--    {{ eShow }}-->
   </div>
 </template>
 
@@ -41,8 +42,15 @@ export default {
     // }
     //
     let input: string = ''
-    let eid = 1
     let eShow = ref(false)
+    let eid
+    let lEid = localStorage.getItem('eid')
+    // console.log(typeof lEid, lEid)
+    if (lEid) {
+      eid = Number(lEid)
+    } else {
+      eid = 1
+    }
 
     let el = getEngine(eid)
     if (el === undefined) {
@@ -50,21 +58,46 @@ export default {
       return {icon, index, query}
     }
 
-    let icon = el.icon
-    let index = el.index
-    let query = el.query
+    let icon = ref(el.icon)
+    let index = ref(el.index)
+    let query = ref(el.query)
 
     return {input, eShow, icon, index, query}
   },
+  // created() {
+  //   let eid = Number( localStorage.getItem('eid'))
+  //   let eSid = String(eid)
+  //   console.warn(typeof eSid, eSid )
+  //   if (eid) {
+  //     this.updatee(eid)
+  //   } else {
+  //     localStorage.setItem('eid','1')
+  //   }
+  // },
   methods: {
     search(input: string, query: string) {
       if (input !== '') {
         window.location.href = query + input
       }
     },
-    updatee(){
-      // let eeid = this.$refs.icon.id
-      console.log('eeid')
+    eshowoff() {
+      this.eShow = false
+    },
+    updatee(eid: any) {
+      // console.warn('catched child event')
+      localStorage.setItem('eid', String(eid))
+      let el = getEngine(eid)
+      if (el === undefined) {
+        let icon, index, query = ref('undefined')
+        return {icon, index, query}
+      }
+
+      this.icon = ref(el.icon)
+      this.index = ref(el.index)
+      this.query = ref(el.query)
+
+      this.eshowoff()
+      // return {icon, index, query}
     }
   }
 
@@ -73,39 +106,39 @@ export default {
 
 <style scoped>
 .Search {
-  @apply w-1/2 h-36 mx-auto flex-col
+  @apply w-1/2 h-36 mx-auto flex-col mb-8
 }
 
 .SearchBar {
   @apply w-full h-12 flex bg-gray-100 shadow-lg rounded
 }
 
-#innerSearch {
+.innerSearch {
   @apply w-auto h-auto m-1 flex flex-grow bg-white border
 }
 
-#engines {
+.engines {
   @apply w-16 h-full ml-0 my-auto flex bg-gray-50
   focus:outline-none
 }
 
-#icon {
+.icon {
   @apply p-1 m-auto
 }
 
-#select {
+.select {
   @apply w-3 pt-2 flex bg-gray-300 text-gray-100 text-center
   hover:bg-gray-400 hover:text-gray-500
   focus:outline-none
 }
 
-#input {
+.input {
   @apply w-auto flex-grow p-2 text-gray-700
   focus:outline-none
   focus:ring-1 focus:ring-inset focus:ring-blue-300
 }
 
-#search {
+.search {
   @apply w-14 flex-none mr-0 bg-gray-500 shadow-lg
   text-center font-bold tracking-tight text-gray-200
   hover:bg-gray-600

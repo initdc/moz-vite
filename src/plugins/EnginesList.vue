@@ -1,9 +1,9 @@
 <template>
   <div class="EnginesList">
     <ul>
-      <li v-for=" eIcon of eIcons">
-        <button class="eBtn" @click="$emit('updatee')" :id="eid++">
-          <img :src="eIcon">
+      <li v-for=" [key, value] of eMap">
+        <button class="eBtn" :key="key" @click="updatee(key)">
+          <img :src="value">
         </button>
       </li>
     </ul>
@@ -17,28 +17,36 @@ import {getAllEngines} from '../store/EnginesList'
 
 export default {
   name: 'EnginesList',
-  emits: ['updatee'],
+  // emits: ['updatee'],
   props: {
     eid: Number,
     icon: String,
   },
   setup() {
-
-    let eid :number = 1
+    let eid: number = 1
     let allE = getAllEngines()
     if (allE === undefined) {
       return undefined
     }
+    // console.log(allE)
     let eLength: number = allE.length
-    let eIcons = []
-    for (let x = 0; x < eLength; x++) {
-      let eIcon = allE[x].icon
-      // console.log(eIcon)
-      eIcons[x] = eIcon
+    let eMap = new Map()
+    for (let e of allE ) {
+      eMap.set(e.eid , e.icon)
     }
-    // console.log(eIcons)
-    return {eid, eLength, eIcons}
+    // console.log(eMap)
+    return {eid, eLength, eMap}
   },
+
+  methods: {
+    goto() {
+      window.location.href = 'https://github.com'
+    },
+    updatee(key: any){
+      // console.log(key)
+      this.$parent.updatee(key)
+    }
+  }
 }
 </script>
 
@@ -51,7 +59,6 @@ export default {
 ul {
   @apply flex-col
 }
-
 li {
   @apply w-full flex h-8 p-1 m-auto
 }

@@ -1,7 +1,10 @@
 <template>
   <!--  <iframe src="https://time.is/zh/just" title=""></iframe>-->
-  <div class="cPlugin">
-    <p id="clock"></p>
+  <div class="Logo">
+    <div class="title">moz.one</div>
+    <div id="cShell">
+      <p id="clock"></p>
+    </div>
   </div>
 </template>
 <script lang="ts">
@@ -39,14 +42,22 @@ export default {
 }
 </script>
 <style>
-.cPlugin {
-  @apply w-1/3 h-48 flex mb-8
+.Logo {
+  @apply w-1/3 h-48 flex-col mb-8
+}
+.title {
+  @apply flex-row pr-1
+  text-right text-2xl font-medium text-gray-400
+}
+
+#cShell {
+  @apply w-full mx-auto bg-gray-100 rounded shadow-lg
 
 }
 #clock {
-  @apply w-full m-auto text-center text-6xl bg-gray-500 text-gray-100 font-black
-  border-4 border-gray-200 shadow-lg
-
+  @apply m-1 bg-gray-500
+  text-center text-6xl  text-gray-100 font-black
+  hover:shadow-inner-xl
 }
 
 </style>

@@ -3,12 +3,12 @@
     <div id="line"></div>
     <div id="context">
       <ul>
-        <li>A <a href="https://fib.one">fibone™</a> project</li>
+        <li>A <a href="https://fib.one" target="_blank">fibone™</a> project</li>
         <li>Build in 2021®</li>
       </ul>
       <ul>
-        <li>Issue on <a href="https://github.com/initdc/">Github</a></li>
-        <li><a href="https://www.patreon.com/1drv">Donation</a></li>
+        <li>Issue on <a href="https://github.com/initdc/" target="_blank">Github</a></li>
+        <li><a href="https://www.patreon.com/1drv" target="_blank">Donation</a></li>
       </ul>
     </div>
   </div>

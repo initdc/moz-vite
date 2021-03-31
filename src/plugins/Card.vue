@@ -1,7 +1,7 @@
 <template>
   <div class="Card">
     <div class="innerCard">
-      <a :href="origin" target="_blank">
+      <a :href="origin" target="_blank" rel="nofollow">
         <div class="iconArea">
           <img class="icon" :src="icon">
         </div>

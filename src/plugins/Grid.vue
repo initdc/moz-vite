@@ -63,6 +63,6 @@ export default {
 }
 
 .Cards {
-  @apply w-3/4 flex mx-auto
+  @apply w-full flex mx-auto px-8
 }
 </style>

@@ -18,7 +18,7 @@ export default {
 
 <style scoped>
 .Break {
-  @apply w-3/4 h-10 mx-auto flex-row
+  @apply w-full h-10 px-8 mx-auto flex-row
 }
 
 .corner {

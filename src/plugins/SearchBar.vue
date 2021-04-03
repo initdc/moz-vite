@@ -3,7 +3,7 @@
     <!--    <button @click="eshowoff" >{{ eShow }}</button>-->
     <div class="SearchBar">
       <div class="innerSearch">
-        <a class="engines" :href="index" target="_blank" rel="nofollow">
+        <a class="engines" :href="index" target="_blank">
           <img class="icon" :src="icon">
         </a>
         <button class="select" @click="eShow = !eShow">▼</button>

@@ -4,11 +4,11 @@
     <div id="context">
       <ul>
         <li>A <a href="https://fib.one" target="_blank">fibone™</a> project</li>
-        <li>Built in 2021®</li>
+        <li>Copyleft <span class="copyleft">©</span> 2021</li>
       </ul>
       <ul>
-        <li>Issue on <a href="https://github.com/initdc/moz-json" target="_blank" rel="nofollow">Github</a></li>
-        <li><a href="https://www.patreon.com/1drv" target="_blank" rel="nofollow">Donation</a></li>
+        <li>Issue on <a href="https://github.com/initdc/moz-json" target="_blank">Github</a></li>
+        <li><a href="https://www.patreon.com/1drv" target="_blank">Donation</a></li>
       </ul>
     </div>
   </div>
@@ -40,5 +40,8 @@ li {
 }
 a {
   @apply font-normal
+}
+.copyleft {
+  @apply inline-block transform rotate-180
 }
 </style>

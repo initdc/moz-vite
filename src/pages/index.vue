@@ -1,12 +1,12 @@
 <template>
-  <div id="index" class="flex-grow">
+  <div id="container">
     <Spacing></Spacing>
     <Logo class="flex m-auto"></Logo>
     <SearchBar></SearchBar>
     <Grid></Grid>
-    <Spacing id="ending"></Spacing>
-    <Footer></Footer>
+    <Spacing></Spacing>
   </div>
+  <Footer id="footer"></Footer>
 </template>
 
 <script lang="ts">
@@ -23,8 +23,8 @@ export default {
 </script>
 
 <style scoped>
-/*#ending {*/
-/*  @apply h-32*/
-/*}*/
+#container {
+  @apply flex-col mx-auto min-w-2xl max-w-6xl
+}
 </style>
 

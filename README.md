@@ -1,27 +1,31 @@
-# Vue 3 + Typescript + Vite
+# moz.one
 
-This template should help get you started developing with Vue 3 and Typescript in Vite.
+> A site navigation with subdomain redirect.
 
-## Recommended IDE Setup
+The website source code for moz.one
 
-[VSCode](https://code.visualstudio.com/) + [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur). Make sure to enable `vetur.experimental.templateInterpolationService` in settings!
+> Backend service
 
-### If Using `<script setup>`
+[subdomain-redirect](https://github.com/initdc/subdomain-redirect)
 
-[`<script setup>`](https://github.com/vuejs/rfcs/pull/227) is a feature that is currently in RFC stage. To get proper IDE support for the syntax, use [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) instead of Vetur (and disable Vetur).
 
-## Type Support For `.vue` Imports in TS
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can use the following:
+## Customize
 
-### If Using Volar
+1. change site title in ```src/components/Logo.vue```
+   
+2. change footer content in ```src/components/Footer.vue```
 
-Run `Volar: Switch TS Plugin on/off` from VSCode command palette.
+3. customize your search engine list and quick access redirect list in ```src/store```
 
-### If Using Vetur
+4. prepare logo with ```.svg``` file extension, store in ```public/static```
 
-1. Install and add `@vuedx/typescript-plugin-vue` to the [plugins section](https://www.typescriptlang.org/tsconfig#plugins) in `tsconfig.json`
-2. Delete `src/shims-vue.d.ts` as it is no longer needed to provide module info to Typescript
-3. Open `src/main.ts` in VSCode
-4. Open the VSCode command palette
-5. Search and run "Select TypeScript version" -> "Use workspace version"
+5. run ```yarn dev``` to preview
+## Deploy
+
+[netlify](https://www.netlify.com) is the best choice to deploy your modern web app. 
+> vite.js is supported on netlify
+
+## License
+
+MPL 2.0

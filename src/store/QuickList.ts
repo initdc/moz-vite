@@ -41,16 +41,16 @@ const QuickList: Quick[] = [
         "icon": "static/QuickIcon/jetbrains.svg",
         "description": "Jetbrains",
         "origin": "https://www.jetbrains.com/",
-        "sub": null,
-        "quick": null
+        "sub": "jet",
+        "quick": "jet.moz.one"
     },
     {
         "qid": 5,
         "icon": "static/QuickIcon/vsc.svg",
         "description": "VSCode",
         "origin": "https://code.visualstudio.com/",
-        "sub": null,
-        "quick": null
+        "sub": "vsc",
+        "quick": "vsc.moz.one"
     },
     {
         "qid": 6,
@@ -81,16 +81,16 @@ const QuickList: Quick[] = [
         "icon": "static/QuickIcon/heroku.svg",
         "description": "Heroku login",
         "origin": "https://id.heroku.com/login",
-        "sub": null,
-        "quick": null
+        "sub": "id",
+        "quick": "id.moz.one"
     },
     {
         "qid": 10,
         "icon": "static/QuickIcon/netlify.svg",
         "description": "Netlify overview",
         "origin": "https://app.netlify.com/",
-        "sub": null,
-        "quick": null
+        "sub": "app",
+        "quick": "app.moz.one"
     },
     {
         "qid": 11,
@@ -130,15 +130,15 @@ const QuickList: Quick[] = [
         "description": "Vercel dashboard",
         "origin": "https://vercel.com/dashboard",
         "sub": null,
-        "quick": null
+        "quick": "now.sh"
     },
     {
         "qid": 16,
         "icon": "static/QuickIcon/sololearn.svg",
         "description": "Sololearn",
         "origin": "https://www.sololearn.com/",
-        "sub": null,
-        "quick": null
+        "sub": "solo",
+        "quick": "solo.moz.one"
     },
     {
         "qid": 17,
@@ -153,16 +153,16 @@ const QuickList: Quick[] = [
         "icon": "static/QuickIcon/golang.svg",
         "description": "golang doc",
         "origin": "https://golang.org/doc/",
-        "sub": null,
-        "quick": null
+        "sub": "godoc",
+        "quick": "godoc.moz.one"
     },
     {
         "qid": 19,
         "icon": "static/QuickIcon/tailwind.svg",
         "description": "Tailwind CSS",
         "origin": "https://tailwindcss.com/",
-        "sub": null,
-        "quick": null
+        "sub": "tcss",
+        "quick": "tcss.moz.one"
     },
     {
         "qid": 20,
@@ -185,8 +185,8 @@ const QuickList: Quick[] = [
         "icon": "static/QuickIcon/fworks.svg",
         "description": "freshping",
         "origin": "https://www.freshworks.com/website-monitoring/",
-        "sub": null,
-        "quick": null
+        "sub": "fresh",
+        "quick": "fresh.moz.one"
     },
     {
         "qid": 23,
@@ -209,32 +209,32 @@ const QuickList: Quick[] = [
         "icon": "static/QuickIcon/bitbucket.svg",
         "description": "Bitbucket",
         "origin": "https://bitbucket.org/",
-        "sub": null,
-        "quick": null
+        "sub": "bit",
+        "quick": "bit.moz.one"
     },
     {
         "qid": 26,
         "icon": "static/QuickIcon/vite.svg",
         "description": "vite js",
         "origin": "https://vitejs.dev/",
-        "sub": null,
-        "quick": null
+        "sub": "vite",
+        "quick": "vite.moz.one"
     },
     {
         "qid": 27,
         "icon": "static/QuickIcon/nuxt.svg",
         "description": "nuxt js",
         "origin": "https://nuxtjs.org/",
-        "sub": null,
-        "quick": null
+        "sub": "nuxt",
+        "quick": "nuxt.moz.one"
     },
     {
         "qid": 28,
         "icon": "static/QuickIcon/fastly.svg",
         "description": "fastly",
         "origin": "https://manage.fastly.com/services/all",
-        "sub": null,
-        "quick": null
+        "sub": "fastly",
+        "quick": "fastly.moz.one"
     },
     {
         "qid": 29,
@@ -253,7 +253,6 @@ const QuickList: Quick[] = [
         "quick": null
     }
 ]
-
 
 
 function getQuick(QuickID: number) {

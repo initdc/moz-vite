@@ -8,7 +8,6 @@
   </div>
 </template>
 <script lang="ts">
-
 export default {
   mounted() {
     function currentTime() {
@@ -19,13 +18,14 @@ export default {
       hour = updateTime(hour);
       min = updateTime(min);
       sec = updateTime(sec);
-      let clock = document.getElementById("clock")
+      let clock = document.getElementById("clock");
       if (clock === null) {
-        return null
+        return null;
       }
-      clock.innerText = hour + " : " + min + " : " + sec; /* adding time to the div */
+      clock.innerText =
+        hour + " : " + min + " : " + sec; /* adding time to the div */
       let t = setTimeout(function () {
-        currentTime()
+        currentTime();
       }, 1000); /* setting timer */
     }
 
@@ -38,26 +38,24 @@ export default {
     }
 
     currentTime(); /* calling currentTime() function to initiate the process */
-  }
-}
+  },
+};
 </script>
 <style>
 .Logo {
-  @apply w-1/3 h-48 flex-col mb-8 z-0
+  @apply w-1/3 h-48 flex-col mb-8 z-0;
 }
 .title {
   @apply flex-row pr-1
-  text-right text-2xl font-medium text-gray-400
+  text-right text-2xl font-medium text-gray-400;
 }
 
 #cShell {
-  @apply w-full mx-auto bg-gray-100 rounded shadow-lg
-
+  @apply w-full mx-auto bg-gray-100 rounded shadow-lg;
 }
 #clock {
   @apply m-1 bg-gray-500
   text-center text-6xl  text-gray-100 font-black
-  hover:shadow-inner-xl
+  hover:shadow-inner-xl;
 }
-
 </style>

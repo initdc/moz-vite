@@ -1,9 +1,9 @@
 <template>
   <div class="EnginesList">
     <ul>
-      <li v-for=" [key, value] of eMap">
+      <li v-for="[key, value] of eMap">
         <button class="eBtn" :key="key" @click="updatee(key)">
-          <img :src="value">
+          <img :src="value" />
         </button>
       </li>
     </ul>
@@ -13,65 +13,65 @@
 </template>
 
 <script lang="ts">
-import {getAllEngines} from '../store/EnginesList'
+import { getAllEngines } from "../store/EnginesList";
 
 export default {
-  name: 'EnginesList',
+  name: "EnginesList",
   // emits: ['updatee'],
   props: {
     eid: Number,
     icon: String,
   },
   setup() {
-    let eid: number = 1
-    let allE = getAllEngines()
+    let eid: number = 1;
+    let allE = getAllEngines();
     if (allE === undefined) {
-      return undefined
+      return undefined;
     }
     // console.log(allE)
-    let eLength: number = allE.length
-    let eMap = new Map()
-    for (let e of allE ) {
-      eMap.set(e.eid , e.icon)
+    let eLength: number = allE.length;
+    let eMap = new Map();
+    for (let e of allE) {
+      eMap.set(e.eid, e.icon);
     }
     // console.log(eMap)
-    return {eid, eLength, eMap}
+    return { eid, eLength, eMap };
   },
 
   methods: {
     goto() {
-      window.location.href = 'https://github.com'
+      window.location.href = "https://github.com";
     },
-    updatee(key: any){
+    updatee(key: any) {
       // console.log(key)
-      this.$parent.updatee(key)
-    }
-  }
-}
+      this.$parent.updatee(key);
+    },
+  },
+};
 </script>
 
 <style scoped>
 .EnginesList {
   @apply w-19.5 h-24 ml-1 -mt-1 flex shadow-lg border z-20
-  overscroll-auto overflow-auto
+  overscroll-auto overflow-auto;
 }
 
 ul {
-  @apply flex-col
+  @apply flex-col;
 }
 li {
-  @apply w-full flex h-8 p-1 m-auto
+  @apply w-full flex h-8 p-1 m-auto;
 }
 
 .eBtn {
-  @apply focus:outline-none
+  @apply focus:outline-none;
 }
 
 ::-webkit-scrollbar {
-  @apply w-3
+  @apply w-3;
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-gray-300
+  @apply bg-gray-300;
 }
 </style>

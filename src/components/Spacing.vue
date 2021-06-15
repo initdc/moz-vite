@@ -1,15 +1,15 @@
 <template>
-<div class="Spacing"></div>
+  <div class="Spacing"></div>
 </template>
 
 <script>
 export default {
-  name: 'Spacing'
-}
+  name: "Spacing",
+};
 </script>
 
 <style scoped>
 .Spacing {
-  @apply w-full h-16 flex
+  @apply w-full h-16 flex;
 }
 </style>

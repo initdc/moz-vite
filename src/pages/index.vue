@@ -10,21 +10,20 @@
 </template>
 
 <script lang="ts">
-import Logo from '../components/Logo.vue'
-import Footer from '../components/Footer.vue'
-import Break from '../components/Break.vue'
-import SearchBar from '../plugins/SearchBar.vue'
-import Grid from '../plugins/Grid.vue'
-import Spacing from '../components/Spacing.vue'
+import Logo from "../components/Logo.vue";
+import Footer from "../components/Footer.vue";
+import Break from "../components/Break.vue";
+import SearchBar from "../plugins/SearchBar.vue";
+import Grid from "../plugins/Grid.vue";
+import Spacing from "../components/Spacing.vue";
 export default {
-  name: 'index',
-  components: {  Spacing, Grid, SearchBar, Logo, Footer,Break }
-}
+  name: "index",
+  components: { Spacing, Grid, SearchBar, Logo, Footer, Break },
+};
 </script>
 
 <style scoped>
 #container {
-  @apply flex-col mx-auto min-w-2xl max-w-6xl
+  @apply flex-col mx-auto min-w-2xl max-w-6xl;
 }
 </style>
-

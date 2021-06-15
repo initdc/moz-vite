@@ -5,15 +5,14 @@
 </template>
 
 <script lang="ts">
-import Footer from '../components/Footer.vue'
+import Footer from "../components/Footer.vue";
 
 export default {
-  components: { Footer }
-}
+  components: { Footer },
+};
 </script>
 <style scoped>
-
 Footer {
-  @apply fixed flex bottom-0
+  @apply fixed flex bottom-0;
 }
 </style>

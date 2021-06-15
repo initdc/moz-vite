@@ -2,6 +2,8 @@
   "name": "moz-vite",
   "version": "0.0.0",
   "scripts": {
+    "code:prettier": "prettier --write . {**/*,*}.{js,ts,jsx,tsx,vue,css}",
+    "upgrade:dep": "yarn upgrade-interactive --latest ",
     "dev": "vite",
     "tsc:build": "vue-tsc --noEmit --skipLibCheck && vite build",
     "build": "vite build",
@@ -16,6 +18,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.1.5",
     "@vue/compiler-sfc": "^3.0.5",
+    "prettier": "^2.3.1",
     "typescript": "^4.1.3",
     "vite": "^2.1.0",
     "vue-tsc": "^0.0.8"

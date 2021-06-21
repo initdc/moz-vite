@@ -21,9 +21,3 @@ export default {
   components: { Spacing, Grid, SearchBar, Logo, Footer, Break },
 };
 </script>
-
-<style scoped>
-#container {
-  @apply flex-col mx-auto min-w-2xl max-w-6xl;
-}
-</style>

@@ -5,7 +5,7 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 export default defineComponent({
-  name: "FbLine",
+  name: "FoLine",
   
   props: {
     direc: {
@@ -27,16 +27,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.Break {
-  @apply w-full h-10 px-8 mx-auto flex-row;
-}
-
-.corner {
-  @apply w-12 h-1/2 flex-none ml-0 mx-auto
-  text-gray-400 text-center;
-}
-
-.bLine {
-  @apply w-full h-px flex mx-auto bg-gray-200;
+._line-hor {
+  @apply my-4;
 }
 </style>

@@ -1,8 +1,5 @@
 @tailwind base;
 
-button:focus{
-    outline: none;
-}
-
 @tailwind components;
+
 @tailwind utilities;

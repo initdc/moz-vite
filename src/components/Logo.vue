@@ -1,14 +1,18 @@
 <template>
   <!--  <iframe src="https://time.is/zh/just" title=""></iframe>-->
   <div class="Logo">
-    <div class="title">moz.one</div>
+    <h1 class="title">moz.one</h1>
     <div id="cShell">
       <p id="clock"></p>
     </div>
   </div>
 </template>
 <script lang="ts">
-export default {
+import {defineComponent, ref} from "vue";
+export default defineComponent({
+  setup(){
+
+  },
   mounted() {
     function currentTime() {
       let date = new Date(); /* creating object of Date class */
@@ -39,7 +43,7 @@ export default {
 
     currentTime(); /* calling currentTime() function to initiate the process */
   },
-};
+});
 </script>
 <style>
 .Logo {

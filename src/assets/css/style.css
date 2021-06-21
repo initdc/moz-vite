@@ -1,0 +1,8 @@
+._line-hor {
+    @apply w-full h-px bg-gray-200 mx-auto my-1;
+  }
+  
+  ._line-ver {
+    @apply h-full w-px bg-gray-200 my-auto mx-1;
+  }
+  

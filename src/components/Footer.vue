@@ -1,5 +1,5 @@
 <template>
-  <div class="Footer">
+  <footer>
     <div id="line"></div>
     <div id="context">
       <ul>
@@ -18,15 +18,18 @@
         </li>
       </ul>
     </div>
-  </div>
+  </footer>
 </template>
 
 <script lang="ts">
-export default {};
+import {defineComponent} from "vue";
+export default defineComponent({
+  name: "FoFooter"
+});
 </script>
 
 <style scoped>
-.Footer {
+footer {
   @apply w-full h-16 flex-col bottom-0 bg-gray-50;
 }
 

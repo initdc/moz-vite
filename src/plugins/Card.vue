@@ -1,19 +1,19 @@
 <template>
-  <div class="Card">
+  <figure class="Card">
     <div class="innerCard">
       <a :href="origin" target="_blank">
         <div class="iconArea">
           <img class="icon" :src="icon" />
         </div>
         <div class="description">
-          <p>{{ description }}</p>
+          <figcaption>{{ description }}</figcaption>
         </div>
       </a>
       <div class="quickLink">
         {{ quick }}
       </div>
     </div>
-  </div>
+  </figure>
 </template>
 
 <script>

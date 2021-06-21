@@ -1,18 +1,13 @@
 <template>
   <div>
-    <Footer></Footer>
+    <FoFooter></FoFooter>
   </div>
 </template>
 
 <script lang="ts">
-import Footer from "../components/Footer.vue";
+import FoFooter from "../components/Footer.vue";
 
 export default {
-  components: { Footer },
+  components: { FoFooter },
 };
 </script>
-<style scoped>
-Footer {
-  @apply fixed flex bottom-0;
-}
-</style>
